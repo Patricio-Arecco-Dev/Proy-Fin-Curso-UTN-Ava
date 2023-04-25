@@ -9,38 +9,40 @@
   </head>
   <body>
     <nav>
-      <a id="anclaNav" href="./index.html" title="logo">
-        <svg width="200" height="80">
-          <rect
-            x="45"
-            y="5"
-            width="60"
-            height="35"
-            rx="5"
-            id="mon1"
-            fill="#F0E9D2"
-          ></rect>
-          <rect
-            x="50"
-            y="10"
-            width="50"
-            height="25"
-            rx="5"
-            id="mon2"
-            fill="#495579"
-          ></rect>
-          <polygon
-            points="55 45 ,95 45,115 62,30 62"
-            fill="#F0E9D2"
-            id="tec1"
-          ></polygon>
-          <polygon
-            points="57 48 ,92 48,104 58,43 58"
-            fill="#495579"
-            id="tec2"
-          ></polygon>
-        </svg>
-      </a>
+      <div id="div_svg">
+        <a id="anclaNav" href="./index.html" title="logo">
+          <svg class="anim_svg" width="120" height="65">
+            <rect
+              id="monitorExt"
+              x="45"
+              y="5"
+              width="60"
+              height="35"
+              rx="5"
+              opacity="0"
+            ></rect>
+            <rect
+              id="monitorInt"
+              x="50"
+              y="10"
+              width="50"
+              height="25"
+              rx="5"
+              opacity="0"
+            ></rect>
+            <polygon
+              id="tecladoExt"
+              points="55 45 ,95 45,115 62,30 62"
+              opacity="0"
+            ></polygon>
+            <polygon
+              id="tecladoInt"
+              points="57 48 ,92 48,104 58,43 58"
+              opacity="0"
+            ></polygon>
+          </svg>
+        </a>
+      </div>
       <ul id="listaHeader">
         <li class="itemLista">
           <a class="itemAncla" href="./historia.html">HISTORIA</a>
@@ -54,7 +56,7 @@
       <h1 id="tituloHUno">HISTORIA DE LA PROGRAMACION</h1>
     </header>
     <main class="contenedorPrincipalHist">
-      <div id="contenedorTarjetasHist">
+      <section id="contenedorTarjetasHist">
         <div class="tarjetaHist">
           <h4 class="tituloUnoTarjHist">
             El principio de la historia de la programación
@@ -120,14 +122,35 @@
             hoy en dia
           </p>
         </div>
-      </div>
-      <div id="contenedorVideoHist">
+      </section>
+      <section id="contenedorVideoHist">
         <h3 id="tituloVideoHist">Un breve video para complementar lo visto</h3>
-        <video id="videoHist" poster="./img/img-video.jpg" controls>
-            <source src="./vid/historia-Comp.mp4">
-            <source src="./vid/historia-Comp.ogv">
-        </video>
-      </div>
+        <div id="videoYControl">
+          <video id="videoHist" poster="./img/img-video.jpg">
+            <source src="./vid/historia-Comp.mp4" type="video/mp4" />
+            <source src="./vid/historia-Comp.ogv" type="video/ovg" />
+          </video>
+          <div id="controlesDeVideo">
+            <div id="botonesVid">
+              <button id="stop" class="boton" onclick="recargarVideo()">
+                RELOAD <img src="./img/reload.svg" alt="" />
+              </button>
+              <button id="play" class="boton" onclick="reproducirVideo()">
+                PLAY<img src="./img/play.svg" alt="" />
+              </button>
+              <button id="pause" class="boton" onclick="pausarVideo()">
+                PAUSE<img src="./img/pausa.svg" alt="" />
+              </button>
+            </div>
+            <div id="displayVid">
+              <p id="instanciaVideo" class="display">Tiempo Visto: 00.00 Seg</p>
+              <p id="duracionVideo" class="display">
+                Duración del Video: 281.10 Seg
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <img id="imagenFooter" src="./img/logo.png" alt="logo.png" />
@@ -139,5 +162,6 @@
         Sitio con fines educativos - Creado por M. Victoria Lopez
       </p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

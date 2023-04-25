@@ -9,38 +9,40 @@
   </head>
   <body>
     <nav>
-      <a id="anclaNav" href="./index.html" title="logo">
-        <svg width="200" height="80">
-          <rect
-            x="45"
-            y="5"
-            width="60"
-            height="35"
-            rx="5"
-            id="mon1"
-            fill="#F0E9D2"
-          ></rect>
-          <rect
-            x="50"
-            y="10"
-            width="50"
-            height="25"
-            rx="5"
-            id="mon2"
-            fill="#495579"
-          ></rect>
-          <polygon
-            points="55 45 ,95 45,115 62,30 62"
-            fill="#F0E9D2"
-            id="tec1"
-          ></polygon>
-          <polygon
-            points="57 48 ,92 48,104 58,43 58"
-            fill="#495579"
-            id="tec2"
-          ></polygon>
-        </svg>
-      </a>
+      <div id="div_svg">
+        <a id="anclaNav" href="./index.html" title="logo">
+          <svg class="anim_svg" width="120" height="65">
+            <rect
+              id="monitorExt"
+              x="45"
+              y="5"
+              width="60"
+              height="35"
+              rx="5"
+              opacity="0"
+            ></rect>
+            <rect
+              id="monitorInt"
+              x="50"
+              y="10"
+              width="50"
+              height="25"
+              rx="5"
+              opacity="0"
+            ></rect>
+            <polygon
+              id="tecladoExt"
+              points="55 45 ,95 45,115 62,30 62"
+              opacity="0"
+            ></polygon>
+            <polygon
+              id="tecladoInt"
+              points="57 48 ,92 48,104 58,43 58"
+              opacity="0"
+            ></polygon>
+          </svg>
+        </a>
+      </div>
       <ul id="listaHeader">
         <li class="itemLista">
           <a class="itemAncla" href="./historia.html">HISTORIA</a>
@@ -60,14 +62,9 @@
         Armemos el rompecabezas y veamos que imagen es...
       </h4>
       <div id="contenedorTarjetasJuego">
-        <div class="tarjetasJuegoSup">
-
-        </div>
-        <div class="tarjetasJuegoInf">
-
-        </div>
+        <div class="tarjetasJuegoSup"></div>
+        <div class="tarjetasJuegoInf"></div>
       </div>
-
     </main>
 
     <footer>

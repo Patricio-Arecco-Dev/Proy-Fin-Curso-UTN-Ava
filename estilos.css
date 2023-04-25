@@ -15,9 +15,12 @@ nav {
   align-items: center; /* Centrado de las cajas en el eje Y */
   justify-content: space-between; /* Separamos las cajas en el eje X */
 }
+#div_svg{
+height: fit-content;
 
+}
 #anclaNav {
-  width: 100px; /* Dimensionamos el ancho la caja del ancla de la PC */
+  width: 150px; /* Dimensionamos el ancho la caja del ancla de la PC */
   height: 85px; /* Dimensionamos la altura la caja del ancla de la PC */
 }
 
@@ -194,12 +197,15 @@ div p {
   width: 200%; /* Establecemos un ancho en % respecto del contenedor */
 }
 #contenedorVideoHist {
-  height: 700px; /* Definimos la altura del contenedor principal */
+  height: auto; /* Definimos la altura automática al contenido */
+  width: 100%;
+  padding: 80px 0px;
+  margin: auto;
   background-color: #181d31; /* Establecemos un color de fondo para todo el nav */
   display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: column; /* Generamos un ordenamiento vertical */
   justify-content: center; /* Centrado de la cajas en el eje X */
-  align-items: center; /* Centrado de la caja en el eje Y */
+  align-items: center; /*Centrado de la caja en el eje Y*/
 }
 #tituloVideoHist {
   color: #678983; /* Definimos el color del texto */
@@ -208,4 +214,153 @@ div p {
   margin: 0px; /* Definimos un margin */
   padding: 0px; /* Definimos un padding */
 }
+#videoYControl {
+  background-color: black;
+  width: 70%;
+  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column; /* Generamos un ordenamiento vertical */
+  justify-content: center; /* Centrado de la cajas en el eje X */
+  align-items: center; /*Centrado de la caja en el eje Y*/
+}
+#videoHist {
+  width: 99%;
+  padding: 5px;
+  height: 600px;
+}
+#controlesDeVideo {
+  height: 50px;
+  width: 97%;
+  background-color: #1d1d1d;
+  border: 10px #1d1d1d solid;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: row; /* Generamos un ordenamiento horizontal */
+}
+#botonesVid {
+  width: 20%;
+  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: row; /* Generamos un ordenamiento horizontal */
+  justify-content: space-between;
+}
+#displayVid {
+  width: 80%;
+  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column; /* Generamos un ordenamiento vertical */
+  justify-content: center;
+}
 
+.boton {
+  box-shadow: 4px 4px #678983;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #e6ddc4;
+  color: #181d31;
+  font-weight: 300;
+}
+
+.display {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: right;
+  padding: 0px;
+  margin: 5px;
+}
+
+#monitorExt {
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: animar1;
+  animation-iteration-count: 1;
+  fill: #f0e9d2;
+}
+
+#monitorInt {
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: animar2;
+  animation-iteration-count: 1;
+  fill: #495579;
+}
+
+#tecladoExt {
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: animar1;
+  animation-iteration-count: 1;
+  fill: #f0e9d2;
+}
+
+#tecladoInt {
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: animar2;
+  animation-iteration-count: 1;
+  fill: #495579;
+}
+
+@keyframes animar1 {
+  0% {
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(0, -10px);
+    opacity: 0.5;
+  }
+
+  30% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes animar2 {
+  0% {
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, -10px);
+    opacity: 0.5;
+  }
+
+  40% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
