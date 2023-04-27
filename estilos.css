@@ -238,13 +238,13 @@ div p {
   flex-direction: row; /* Generamos un ordenamiento horizontal */
 }
 #botonesVid {
-  width: 20%;
+  width: 30%;
   display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: row; /* Generamos un ordenamiento horizontal */
   justify-content: space-between;
 }
 #displayVid {
-  width: 80%;
+  width: 70%;
   display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: column; /* Generamos un ordenamiento vertical */
   justify-content: center;
@@ -258,6 +258,10 @@ div p {
   background-color: #e6ddc4;
   color: #181d31;
   font-weight: 300;
+}
+.boton:active{
+  transform: translateY(4px); 
+  box-shadow: none;
 }
 
 .display {
