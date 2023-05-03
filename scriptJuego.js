@@ -49,21 +49,21 @@ elementoReceptor_01.addEventListener("drop", (event) => {
     // Si el Elemento arrastrado fue el rompe2.png.
   if (dataObtenida == "http://127.0.0.1:5500/img/rompe2.png") {
     elementoReceptor_01.innerHTML = `
-            <img  src=${dataObtenida} alt="imagen del rompe2.png"/>
+            <img  src=${dataObtenida} alt="imagen del rompe2.png" height="400px" width="275px"/>
         `;
     elementoArrastable_02.style.display = "none";
   }
     // Si el Elemento arrastrado fue el rompe1.png.
     if (dataObtenida == "http://127.0.0.1:5500/img/rompe1.png") {
         elementoReceptor_01.innerHTML = `
-                <img  src=${dataObtenida} alt="imagen del rompe1.png"/>
+                <img  src=${dataObtenida} alt="imagen del rompe1.png" height="400px" width="275px"/>
             `;
         elementoArrastable_01.style.display = "none";
       }
           // Si el Elemento arrastrado fue el rompe3.png.
   if (dataObtenida == "http://127.0.0.1:5500/img/rompe3.png") {
     elementoReceptor_01.innerHTML = `
-            <img  src=${dataObtenida} alt="imagen del rompe3.png"/>
+            <img  src=${dataObtenida} alt="imagen del rompe3.png" height="400px" width="275px"/>
         `;
     elementoArrastable_03.style.display = "none";
   }
@@ -79,21 +79,21 @@ elementoReceptor_02.addEventListener("drop", (event) => {
       // Si el Elemento arrastrado fue el rompe2.png.
     if (dataObtenida == "http://127.0.0.1:5500/img/rompe2.png") {
       elementoReceptor_02.innerHTML = `
-              <img  src=${dataObtenida} alt="imagen del rompe2.png"/>
+              <img  src=${dataObtenida} alt="imagen del rompe2.png" height="400px" width="275px"/>
           `;
       elementoArrastable_02.style.display = "none";
     }
       // Si el Elemento arrastrado fue el rompe1.png.
       if (dataObtenida == "http://127.0.0.1:5500/img/rompe1.png") {
           elementoReceptor_02.innerHTML = `
-                  <img  src=${dataObtenida} alt="imagen del rompe1.png"/>
+                  <img  src=${dataObtenida} alt="imagen del rompe1.png" height="400px" width="275px"/>
               `;
           elementoArrastable_01.style.display = "none";
         }
             // Si el Elemento arrastrado fue el rompe3.png.
     if (dataObtenida == "http://127.0.0.1:5500/img/rompe3.png") {
       elementoReceptor_02.innerHTML = `
-              <img  src=${dataObtenida} alt="imagen del rompe3.png"/>
+              <img  src=${dataObtenida} alt="imagen del rompe3.png" height="400px" width="275px"/>
           `;
       elementoArrastable_03.style.display = "none";
     }
@@ -108,21 +108,21 @@ elementoReceptor_02.addEventListener("drop", (event) => {
       // Si el Elemento arrastrado fue el rompe2.png.
     if (dataObtenida == "http://127.0.0.1:5500/img/rompe2.png") {
       elementoReceptor_03.innerHTML = `
-              <img  src=${dataObtenida} alt="imagen del rompe2.png"/>
+              <img  src=${dataObtenida} alt="imagen del rompe2.png" height="400px" width="275px"/>
           `;
       elementoArrastable_02.style.display = "none";
     }
       // Si el Elemento arrastrado fue el rompe1.png.
       if (dataObtenida == "http://127.0.0.1:5500/img/rompe1.png") {
           elementoReceptor_03.innerHTML = `
-                  <img  src=${dataObtenida} alt="imagen del rompe1.png"/>
+                  <img  src=${dataObtenida} alt="imagen del rompe1.png" height="400px" width="275px"/>
               `;
           elementoArrastable_01.style.display = "none";
         }
             // Si el Elemento arrastrado fue el rompe3.png.
     if (dataObtenida == "http://127.0.0.1:5500/img/rompe3.png") {
       elementoReceptor_03.innerHTML = `
-              <img  src=${dataObtenida} alt="imagen del rompe3.png"/>
+              <img  src=${dataObtenida} alt="imagen del rompe3.png" height="400px" width="275px"/>
           `;
       elementoArrastable_03.style.display = "none";
     }

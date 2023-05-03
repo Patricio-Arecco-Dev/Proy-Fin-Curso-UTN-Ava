@@ -580,8 +580,8 @@ div p {
   justify-content: center;
   text-align: center;
   align-items: center;
-  overflow-clip-margin: content-box;
   overflow: clip;
+  overflow-clip-margin: content-box;
 }
 
 #reinicio {
