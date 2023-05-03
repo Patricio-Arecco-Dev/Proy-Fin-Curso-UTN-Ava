@@ -584,6 +584,10 @@ div p {
   overflow-clip-margin: content-box;
 }
 
+.tarjeta:hover {
+  background-color: rgb(54, 54, 54);
+}
+
 #reinicio {
   display: block;
   margin: auto;
