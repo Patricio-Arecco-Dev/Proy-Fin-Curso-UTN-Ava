@@ -2,9 +2,9 @@
 let elementoReceptor_01 = document.querySelector("#tarjetaSupUno");
 let elementoReceptor_02 = document.querySelector("#tarjetaSupDos");
 let elementoReceptor_03 = document.querySelector("#tarjetaSupTres");
-let elementoArrastable_01 = document.querySelector("#tarjetaInfUno");
-let elementoArrastable_02 = document.querySelector("#tarjetaInfDos");
-let elementoArrastable_03 = document.querySelector("#tarjetaInfTres");
+let elementoArrastable_01 = document.querySelector("#imagenInfUno");
+let elementoArrastable_02 = document.querySelector("#imagenInfDos");
+let elementoArrastable_03 = document.querySelector("#imagenInfTres");
 
 elementoArrastable_01.addEventListener("dragstart", (event) => {
   console.log("Se inició el arrastre de la Imagen metodo:addEventListener");

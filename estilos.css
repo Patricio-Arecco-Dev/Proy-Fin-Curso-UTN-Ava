@@ -1,11 +1,13 @@
 * {
   font-family: Montserrat, sans-serif;
   /* Definimos un tipo de fuente por defecto para todo las hojas */
+  margin: auto 0px;
 }
 
 body {
-  margin: 0px;
+  margin: auto 0px;
   /* Quitamos el margen al body para que las cajas del interior ocupen todo el lienzo */
+  display: block;
 }
 
 nav {
@@ -37,27 +39,23 @@ nav {
 }
 
 #listaHeader {
-  width: 500;
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
   /* Dimensionamos el ancho la caja de la lista no ordenada */
-  list-style-type: none;
-  /* Le quitamos cualquier tipo de viñeta */
   padding: 0px;
   /* Le quitamos todo el padding */
   border: 0px;
   /* Le quitamos todo el border */
-  margin: 0px;
+  margin-right: 20px;
   /* Le quitamos todo el margin */
 }
 
 .itemLista {
+  list-style-type: none;
+  /* Le quitamos cualquier tipo de viñeta */
   float: left;
   /* Hacemos flotar los items para que queden uno al lado del otro */
-  padding: 0px;
-  /* Le quitamos todo el padding */
-  border: 0px;
-  /* Le quitamos todo el border */
-  margin: 0px 20px;
-  /* Le agregamos margin para separar los botones */
 }
 
 .itemAncla {
@@ -71,13 +69,22 @@ nav {
   /* Redondeamos las esquinas de la caja */
   background-color: #e6ddc4;
   /* Definimos el color de fondo de la caja */
-  box-shadow: #678983 2px 3px;
+  box-shadow: 3px 3px #678983;
   /* Definimos color y ancho del sombrado para dar un aspecto de botón */
   padding: 10px;
   /* Le agregamos algo de padding para darle volumen al botón*/
   color: #000000;
   /* Definimos el color del texto */
 }
+
+.itemLista:active {
+  transform: translateY(3px);
+}
+
+.itemAncla:active {
+  box-shadow: none;
+}
+
 
 .contenedorCabecera {
   height: 500px;
@@ -152,20 +159,18 @@ nav {
   /* Centrado de las cajas en el eje Y */
 }
 
-#imagenMainDos {
+.imagenMainDosYTres {
   width: 100%;
   /* Establecemos que la imagen ocupe el 100% del contenedor padre */
+  margin: 0px;
 }
 
-#imagenMainTres {
-  width: 100%;
-  /* Establecemos que la imagen ocupe el 100% del contenedor padre */
-}
 
 .parrafoMainTarjetaIndex {
+  color: black;
   text-align: center;
   /* Centramos el texto dentro de la tarjeta */
-  margin: 0px 10px;
+  margin: auto 10px;
   /* Le damos algo de margen para separar el texto del borde de la tarjeta */
   font-size: small;
   /* Le damos tamaño pequeño al párrafo dentro de la tarjeta */
@@ -186,11 +191,17 @@ nav {
   /* le agregamos algo de padding */
   border-radius: 10px;
   /* Redondeamos las esquinas de la caja */
-  box-shadow: #678983 2px 3px;
+  box-shadow: #678983 3px 3px;
   /* Definimos color y ancho del sombrado para dar un aspecto de botón */
   margin-bottom: 20px;
   /* Definimos un margen inferior para separa del borde de la tarjeta */
 }
+
+.botonMainTarjetaIndex:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
 
 footer {
   position: static;
@@ -361,7 +372,6 @@ div p {
 #videoHist {
   width: 99%;
   padding: 5px;
-  height: 600px;
 }
 
 #controlesDeVideo {
@@ -375,6 +385,7 @@ div p {
   /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: row;
   /* Generamos un ordenamiento horizontal */
+
 }
 
 #botonesVid {
@@ -388,7 +399,7 @@ div p {
 
 #displayVid {
   width: 70%;
-  display: flex;
+  display: block;
   /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: column;
   /* Generamos un ordenamiento vertical */
@@ -537,9 +548,10 @@ div p {
   margin: 1px;
   padding: 0px;
 }
-.contenedorTarjetasJuego{
+
+#contenedorTarjetasJuego {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 }
 
@@ -547,17 +559,17 @@ div p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
-  margin: 40px;
+  gap: 1px;
+  margin: 0px;
 }
 
 .tarjetasJuegoInf {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 1px;
   margin: 40px;
- }
+}
 
 .tarjeta {
   width: 275px;
@@ -568,16 +580,25 @@ div p {
   justify-content: center;
   text-align: center;
   align-items: center;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
-#reinicio{
+#reinicio {
   display: block;
   margin: auto;
   width: 200px;
 }
 
-.tarjeta p{
+.tarjeta p {
   color: #E6DDC4;
- 
+  display: block;
+  font-size: 16px;
+
+}
+
+.imagenesJuego {
+  width: 275px;
+  height: 400px;
 
 }
