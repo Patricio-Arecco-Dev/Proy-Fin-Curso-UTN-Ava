@@ -1,232 +1,369 @@
 * {
-  font-family: Montserrat, sans-serif; /* Definimos un tipo de fuente por defecto para todo las hojas */
+  font-family: Montserrat, sans-serif;
+  /* Definimos un tipo de fuente por defecto para todo las hojas */
 }
 
 body {
-  margin: 0px; /* Quitamos el margen al body para que las cajas del interior ocupen todo el lienzo */
+  margin: 0px;
+  /* Quitamos el margen al body para que las cajas del interior ocupen todo el lienzo */
 }
 
 nav {
-  position: static; /* Fijamos el nav en posición estática dentro del lienzo */
-  width: auto; /* Ocupamos todo el ancho del lienzo */
-  height: 85px; /* Fijamos una altura al nav */
-  background-color: #181d31; /* Establecemos un color de fondo para todo el nav */
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  align-items: center; /* Centrado de las cajas en el eje Y */
-  justify-content: space-between; /* Separamos las cajas en el eje X */
+  position: static;
+  /* Fijamos el nav en posición estática dentro del lienzo */
+  width: auto;
+  /* Ocupamos todo el ancho del lienzo */
+  height: 85px;
+  /* Fijamos una altura al nav */
+  background-color: #181d31;
+  /* Establecemos un color de fondo para todo el nav */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
+  justify-content: space-between;
+  /* Separamos las cajas en el eje X */
 }
-#div_svg{
-height: fit-content;
 
+#div_svg {
+  height: fit-content;
 }
+
 #anclaNav {
-  width: 150px; /* Dimensionamos el ancho la caja del ancla de la PC */
-  height: 85px; /* Dimensionamos la altura la caja del ancla de la PC */
+  width: 150px;
+  /* Dimensionamos el ancho la caja del ancla de la PC */
+  height: 85px;
+  /* Dimensionamos la altura la caja del ancla de la PC */
 }
 
 #listaHeader {
-  width: 500; /* Dimensionamos el ancho la caja de la lista no ordenada */
-  list-style-type: none; /* Le quitamos cualquier tipo de viñeta */
-  padding: 0px; /* Le quitamos todo el padding */
-  border: 0px; /* Le quitamos todo el border */
-  margin: 0px; /* Le quitamos todo el margin */
+  width: 500;
+  /* Dimensionamos el ancho la caja de la lista no ordenada */
+  list-style-type: none;
+  /* Le quitamos cualquier tipo de viñeta */
+  padding: 0px;
+  /* Le quitamos todo el padding */
+  border: 0px;
+  /* Le quitamos todo el border */
+  margin: 0px;
+  /* Le quitamos todo el margin */
 }
 
 .itemLista {
-  float: left; /* Hacemos flotar los items para que queden uno al lado del otro */
-  padding: 0px; /* Le quitamos todo el padding */
-  border: 0px; /* Le quitamos todo el border */
-  margin: 0px 20px; /* Le agregamos margin para separar los botones */
+  float: left;
+  /* Hacemos flotar los items para que queden uno al lado del otro */
+  padding: 0px;
+  /* Le quitamos todo el padding */
+  border: 0px;
+  /* Le quitamos todo el border */
+  margin: 0px 20px;
+  /* Le agregamos margin para separar los botones */
 }
 
 .itemAncla {
-  text-decoration: none; /* Le quitamos la linea inferior del link */
-  width: 95px; /* Definimos el ancho la caja del ancla */
-  height: 40px; /* Definimos la altura la caja del ancla */
-  border-radius: 10px; /* Redondeamos las esquinas de la caja */
-  background-color: #e6ddc4; /* Definimos el color de fondo de la caja */
-  box-shadow: #678983 2px 3px; /* Definimos color y ancho del sombrado para dar un aspecto de botón */
-  padding: 10px; /* Le agregamos algo de padding para darle volumen al botón*/
-  color: #000000; /* Definimos el color del texto */
+  text-decoration: none;
+  /* Le quitamos la linea inferior del link */
+  width: 95px;
+  /* Definimos el ancho la caja del ancla */
+  height: 40px;
+  /* Definimos la altura la caja del ancla */
+  border-radius: 10px;
+  /* Redondeamos las esquinas de la caja */
+  background-color: #e6ddc4;
+  /* Definimos el color de fondo de la caja */
+  box-shadow: #678983 2px 3px;
+  /* Definimos color y ancho del sombrado para dar un aspecto de botón */
+  padding: 10px;
+  /* Le agregamos algo de padding para darle volumen al botón*/
+  color: #000000;
+  /* Definimos el color del texto */
 }
 
 .contenedorCabecera {
-  height: 500px; /* Establecemos la altura del contenedor */
-  background: url(./img/codigo.jpg); /* llamamos a la imagen del fondo */
-  background-size: cover; /* Establecemos que de dimensione para cubrir el espacio del contenedor */
-  background-attachment: fixed; /* la fijamos a una posición por detras del lienzo */
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  align-items: center; /* Centrado de las cajas en el eje Y */
-  justify-content: center; /* Centramos el texto en el eje X */
+  height: 500px;
+  /* Establecemos la altura del contenedor */
+  background: url(./img/codigo.jpg);
+  /* llamamos a la imagen del fondo */
+  background-size: cover;
+  /* Establecemos que de dimensione para cubrir el espacio del contenedor */
+  background-attachment: fixed;
+  /* la fijamos a una posición por detras del lienzo */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
+  justify-content: center;
+  /* Centramos el texto en el eje X */
 }
 
 #tituloHUno {
-  font-size: 50px; /* Le damos tamaño a la fuente del H1 */
-  text-align: center; /* Centramos el texto en el eje X */
-  color: white; /* Definimos el color del texto */
-  text-shadow: 2px 2px gray, 6px 6px black; /* Definimos color y ancho del sombrado para que el titulo H1 se vea mas lindo */
+  font-size: 50px;
+  /* Le damos tamaño a la fuente del H1 */
+  text-align: center;
+  /* Centramos el texto en el eje X */
+  color: white;
+  /* Definimos el color del texto */
+  text-shadow: 2px 2px gray, 6px 6px black;
+  /* Definimos color y ancho del sombrado para que el titulo H1 se vea mas lindo */
   margin: 50px;
 }
 
 .contenedorPrincipalIndex {
-  height: 750px; /* Definimos la altura del contenedor principal */
-  background-color: #181d31; /* Establecemos un color de fondo para todo el nav */
+  height: 750px;
+  /* Definimos la altura del contenedor principal */
+  background-color: #181d31;
+  /* Establecemos un color de fondo para todo el nav */
 }
 
 #tituloHDosIndex {
-  color: #678983; /* Definimos el color del texto */
-  text-align: center; /* Centramos el texto en el eje X */
-  font-size: 38px; /* Le damos tamaño a la fuente del H2 */
-  margin: 0px 0px 180px 0px; /* Le agregamos margin inferior para separas de las tarjetas */
+  color: #678983;
+  /* Definimos el color del texto */
+  text-align: center;
+  /* Centramos el texto en el eje X */
+  font-size: 38px;
+  /* Le damos tamaño a la fuente del H2 */
+  margin: 0px 0px 180px 0px;
+  /* Le agregamos margin inferior para separas de las tarjetas */
 }
 
 #contenedorTarjetasIndex {
-  display: flex; /* Usamos un contenedor Flex para usar la prop justify-content */
-  justify-content: space-around; /* Separamos las cajas en el eje X */
+  display: flex;
+  /* Usamos un contenedor Flex para usar la prop justify-content */
+  justify-content: space-around;
+  /* Separamos las cajas en el eje X */
 }
 
 .tarjetaIndex {
-  width: 300px; /* Establecemos el ancho de las tarjetas */
-  height: 370px; /* Establecemos la altura de las tarjetas */
-  border: 5px solid #678983; /* Definimos el ancho y el color del borde */
-  background-color: #e6ddc4; /* Establecemos el color de fondo de la tarjeta */
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: column; /* Establecemos la dirección flexible */
-  justify-content: space-between; /* Separamos las cajas en el eje X */
-  align-items: center; /* Centrado de las cajas en el eje Y */
+  width: 300px;
+  /* Establecemos el ancho de las tarjetas */
+  height: 370px;
+  /* Establecemos la altura de las tarjetas */
+  border: 5px solid #678983;
+  /* Definimos el ancho y el color del borde */
+  background-color: #e6ddc4;
+  /* Establecemos el color de fondo de la tarjeta */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column;
+  /* Establecemos la dirección flexible */
+  justify-content: space-between;
+  /* Separamos las cajas en el eje X */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
 }
 
 #imagenMainDos {
-  width: 100%; /* Establecemos que la imagen ocupe el 100% del contenedor padre */
+  width: 100%;
+  /* Establecemos que la imagen ocupe el 100% del contenedor padre */
 }
 
 #imagenMainTres {
-  width: 100%; /* Establecemos que la imagen ocupe el 100% del contenedor padre */
+  width: 100%;
+  /* Establecemos que la imagen ocupe el 100% del contenedor padre */
 }
 
 .parrafoMainTarjetaIndex {
-  text-align: center; /* Centramos el texto dentro de la tarjeta */
-  margin: 0px 10px; /* Le damos algo de margen para separar el texto del borde de la tarjeta */
-  font-size: small; /* Le damos tamaño pequeño al párrafo dentro de la tarjeta */
+  text-align: center;
+  /* Centramos el texto dentro de la tarjeta */
+  margin: 0px 10px;
+  /* Le damos algo de margen para separar el texto del borde de la tarjeta */
+  font-size: small;
+  /* Le damos tamaño pequeño al párrafo dentro de la tarjeta */
 }
 
 .botonMainTarjetaIndex {
-  text-decoration: none; /* Le quitamos la linea inferior del link */
-  color: white; /* Definimos el color del texto */
-  text-align: center; /* Centramos el texto en el eje X */
-  background-color: #181d31; /* Establecemos un color de fondo al botón */
-  width: 38%; /* Definimos el ancho la caja del ancla en relación al tamaño del padre*/
-  padding: 10px; /* le agregamos algo de padding */
-  border-radius: 10px; /* Redondeamos las esquinas de la caja */
-  box-shadow: #678983 2px 3px; /* Definimos color y ancho del sombrado para dar un aspecto de botón */
-  margin-bottom: 20px; /* Definimos un margen inferior para separa del borde de la tarjeta */
+  text-decoration: none;
+  /* Le quitamos la linea inferior del link */
+  color: white;
+  /* Definimos el color del texto */
+  text-align: center;
+  /* Centramos el texto en el eje X */
+  background-color: #181d31;
+  /* Establecemos un color de fondo al botón */
+  width: 38%;
+  /* Definimos el ancho la caja del ancla en relación al tamaño del padre*/
+  padding: 10px;
+  /* le agregamos algo de padding */
+  border-radius: 10px;
+  /* Redondeamos las esquinas de la caja */
+  box-shadow: #678983 2px 3px;
+  /* Definimos color y ancho del sombrado para dar un aspecto de botón */
+  margin-bottom: 20px;
+  /* Definimos un margen inferior para separa del borde de la tarjeta */
 }
 
 footer {
-  position: static; /* Fijamos en nav en posición estática dentro del lienzo */
-  width: auto; /* Ocupamos todo el ancho del lienzo */
-  height: 160px; /* Fijamos una altura al nav */
-  background-color: #678983; /* Establecemos un color de fondo para todo el nav */
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  align-items: center; /* Centrado de las cajas en el eje Y */
-  justify-content: space-between; /* Separamos las cajas en el eje X */
+  position: static;
+  /* Fijamos en nav en posición estática dentro del lienzo */
+  width: auto;
+  /* Ocupamos todo el ancho del lienzo */
+  height: 160px;
+  /* Fijamos una altura al nav */
+  background-color: #678983;
+  /* Establecemos un color de fondo para todo el nav */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
+  justify-content: space-between;
+  /* Separamos las cajas en el eje X */
 }
 
 #imagenFooter {
-  width: 110px; /* Definimos el ancho la caja de la imagen */
-  height: 80px; /* Definimos la altura la caja de la imagen */
-  margin-left: 40px; /* Definimos un margen izquierdo para la caja de la imagen */
+  width: 110px;
+  /* Definimos el ancho la caja de la imagen */
+  height: 80px;
+  /* Definimos la altura la caja de la imagen */
+  margin-left: 40px;
+  /* Definimos un margen izquierdo para la caja de la imagen */
 }
 
 #parrafoFooterUno {
-  text-align: center; /* Centrado del texto dentro de la caja */
+  text-align: center;
+  /* Centrado del texto dentro de la caja */
 }
 
 #parrafoFooterDos {
-  margin-right: 40px; /* Definimos un margen derecho para la caja del párrafo */
+  margin-right: 40px;
+  /* Definimos un margen derecho para la caja del párrafo */
 }
 
 .contenedorPrincipalHist {
   /* height: 750px; /* Definimos la altura del contenedor principal */
-  background-color: #181d31; /* Establecemos un color de fondo para todo el nav */
+  background-color: #181d31;
+  /* Establecemos un color de fondo para todo el nav */
 }
+
 #contenedorTarjetasHist {
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: column; /* Establecemos la dirección flexible */
-  justify-content: center; /* Separamos las cajas en el eje X */
-  align-items: center; /* Centrado de las cajas en el eje Y */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column;
+  /* Establecemos la dirección flexible */
+  justify-content: center;
+  /* Separamos las cajas en el eje X */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
 }
+
 .tarjetaHist {
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: row; /* Establecemos la dirección flexible */
-  justify-content: center; /* Separamos las cajas en el eje X */
-  align-items: center; /* Centrado de las cajas en el eje Y */
-  margin: 40px; /* Definimos un margin */
-  padding: 0px; /* Definimos un padding */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: row;
+  /* Establecemos la dirección flexible */
+  justify-content: center;
+  /* Separamos las cajas en el eje X */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
+  margin: 40px;
+  /* Definimos un margin */
+  padding: 0px;
+  /* Definimos un padding */
 }
+
 .tarjetaHistRev {
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: row-reverse; /* Establecemos la dirección flexible */
-  justify-content: center; /* Separamos las cajas en el eje X */
-  align-items: center; /* Centrado de las cajas en el eje Y */
-  margin: 40px; /* Definimos un margin */
-  padding: 0px; /* Definimos un padding */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: row-reverse;
+  /* Establecemos la dirección flexible */
+  justify-content: center;
+  /* Separamos las cajas en el eje X */
+  align-items: center;
+  /* Centrado de las cajas en el eje Y */
+  margin: 40px;
+  /* Definimos un margin */
+  padding: 0px;
+  /* Definimos un padding */
 }
 
 div h4 {
-  color: #678983; /* Definimos el color del texto */
-  font-size: 35px; /* Definimos un tamaño de la fuente */
-  text-align: center; /* Centramos el texto */
-  text-shadow: 2px 2px black; /* Le colocamos algo de sombra al texto*/
-  margin: 10px; /* Definimos un margin */
-  padding: 0px; /* Definimos un padding */
+  color: #678983;
+  /* Definimos el color del texto */
+  font-size: 35px;
+  /* Definimos un tamaño de la fuente */
+  text-align: center;
+  /* Centramos el texto */
+  text-shadow: 2px 2px black;
+  /* Le colocamos algo de sombra al texto*/
+  margin: 10px;
+  /* Definimos un margin */
+  padding: 0px;
+  /* Definimos un padding */
 }
+
 div p {
   color: #e6ddc4;
   font-size: 12px;
-  margin: 10px; /* Definimos un margin */
-  padding: 0px; /* Definimos un padding */
+  margin: 10px;
+  /* Definimos un margin */
+  padding: 0px;
+  /* Definimos un padding */
 }
+
 .parrafoUnoTarjHist {
-  width: 60%; /* Establecemos un ancho en % respecto del contenedor */
+  width: 60%;
+  /* Establecemos un ancho en % respecto del contenedor */
 }
+
 .parrafoDosTarjHist {
-  width: 50%; /* Establecemos un ancho en % respecto del contenedor */
+  width: 50%;
+  /* Establecemos un ancho en % respecto del contenedor */
 }
+
 .parrafoTresTarjHist {
-  width: 200%; /* Establecemos un ancho en % respecto del contenedor */
+  width: 200%;
+  /* Establecemos un ancho en % respecto del contenedor */
 }
+
 #contenedorVideoHist {
-  height: auto; /* Definimos la altura automática al contenido */
+  height: auto;
+  /* Definimos la altura automática al contenido */
   width: 100%;
   padding: 80px 0px;
   margin: auto;
-  background-color: #181d31; /* Establecemos un color de fondo para todo el nav */
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: column; /* Generamos un ordenamiento vertical */
-  justify-content: center; /* Centrado de la cajas en el eje X */
-  align-items: center; /*Centrado de la caja en el eje Y*/
+  background-color: #181d31;
+  /* Establecemos un color de fondo para todo el nav */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column;
+  /* Generamos un ordenamiento vertical */
+  justify-content: center;
+  /* Centrado de la cajas en el eje X */
+  align-items: center;
+  /*Centrado de la caja en el eje Y*/
 }
+
 #tituloVideoHist {
-  color: #678983; /* Definimos el color del texto */
-  text-align: center; /* Centramos el texto en el eje X */
-  font-size: 38px; /* Le damos tamaño a la fuente del H2 */
-  margin: 0px; /* Definimos un margin */
-  padding: 0px; /* Definimos un padding */
+  color: #678983;
+  /* Definimos el color del texto */
+  text-align: center;
+  /* Centramos el texto en el eje X */
+  font-size: 38px;
+  /* Le damos tamaño a la fuente del H2 */
+  margin: 0px;
+  /* Definimos un margin */
+  padding: 0px;
+  /* Definimos un padding */
 }
+
 #videoYControl {
   background-color: black;
   width: 70%;
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: column; /* Generamos un ordenamiento vertical */
-  justify-content: center; /* Centrado de la cajas en el eje X */
-  align-items: center; /*Centrado de la caja en el eje Y*/
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column;
+  /* Generamos un ordenamiento vertical */
+  justify-content: center;
+  /* Centrado de la cajas en el eje X */
+  align-items: center;
+  /*Centrado de la caja en el eje Y*/
 }
+
 #videoHist {
   width: 99%;
   padding: 5px;
   height: 600px;
 }
+
 #controlesDeVideo {
   height: 50px;
   width: 97%;
@@ -234,19 +371,27 @@ div p {
   border: 10px #1d1d1d solid;
   border-radius: 10px;
   margin: 5px;
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: row; /* Generamos un ordenamiento horizontal */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: row;
+  /* Generamos un ordenamiento horizontal */
 }
+
 #botonesVid {
   width: 30%;
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: row; /* Generamos un ordenamiento horizontal */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: row;
+  /* Generamos un ordenamiento horizontal */
   justify-content: space-between;
 }
+
 #displayVid {
   width: 70%;
-  display: flex; /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
-  flex-direction: column; /* Generamos un ordenamiento vertical */
+  display: flex;
+  /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
+  flex-direction: column;
+  /* Generamos un ordenamiento vertical */
   justify-content: center;
 }
 
@@ -259,8 +404,9 @@ div p {
   color: #181d31;
   font-weight: 300;
 }
-.boton:active{
-  transform: translateY(4px); 
+
+.boton:active {
+  transform: translateY(4px);
   box-shadow: none;
 }
 
@@ -326,6 +472,7 @@ div p {
     transform: translate(0, -15px);
     opacity: 0;
   }
+
   20% {
     transform: translate(0, -10px);
     opacity: 0.5;
@@ -335,10 +482,12 @@ div p {
     transform: translate(0, 0);
     opacity: 1;
   }
+
   90% {
     transform: translate(0, 0);
     opacity: 1;
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 1;
@@ -350,6 +499,7 @@ div p {
     transform: translate(0, -15px);
     opacity: 0;
   }
+
   30% {
     transform: translate(0, -10px);
     opacity: 0.5;
@@ -359,12 +509,75 @@ div p {
     transform: translate(0, 0);
     opacity: 1;
   }
+
   90% {
     transform: translate(0, 0);
     opacity: 1;
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 1;
   }
+}
+
+.contenedorPrincipalJuego {
+  padding: 100px 20px;
+  background-color: #181D31;
+  margin: auto 0px;
+  display: block;
+}
+
+.tituloRompeCabeza {
+  font-size: 40px;
+  text-align: center;
+  color: #678983;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px black;
+  margin: 1px;
+  padding: 0px;
+}
+.contenedorTarjetasJuego{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.tarjetasJuegoSup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px;
+}
+
+.tarjetasJuegoInf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px;
+ }
+
+.tarjeta {
+  width: 275px;
+  height: 400px;
+  background-color: grey;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#reinicio{
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+
+.tarjeta p{
+  color: #E6DDC4;
+ 
+
 }

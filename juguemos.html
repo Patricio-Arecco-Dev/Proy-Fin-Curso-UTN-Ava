@@ -62,9 +62,41 @@
         Armemos el rompecabezas y veamos que imagen es...
       </h4>
       <div id="contenedorTarjetasJuego">
-        <div class="tarjetasJuegoSup"></div>
-        <div class="tarjetasJuegoInf"></div>
+        <div class="tarjetasJuegoSup">
+          <div class="tarjeta" id="tarjetaSupUno">
+            <p>Arrastre y suelte la imágene aquí</p>
+          </div>
+          <div class="tarjeta" id="tarjetaSupDos">
+            <p>Arrastre y suelte la imágene aquí</p>
+          </div>
+          <div class="tarjeta" id="tarjetaSupTres">
+            <p>Arrastre y suelte la imágene aquí</p>
+          </div>
+        </div>
+        <div class="tarjetasJuegoInf">
+          <img
+            class="tarjeta"
+            id="tarjetaInfDos"
+            src="./img/rompe2.png"
+            alt="Imagen Parte de"
+          />
+
+          <img
+            class="tarjeta"
+            id="tarjetaInfUno"
+            src="./img/rompe1.png"
+            alt="Imagen Siendo"
+          />
+
+          <img
+            class="tarjeta"
+            id="tarjetaInfTres"
+            src="./img/rompe3.png"
+            alt="Imagen La Historia"
+          />
+        </div>
       </div>
+      <button onclick="reiniciarJuego()" class="boton" id="reinicio">Reiniciar</button>
     </main>
 
     <footer>
@@ -77,5 +109,6 @@
         Sitio con fines educativos - Creado por M. Victoria Lopez
       </p>
     </footer>
+    <script src="./scriptJuego.js"></script>
   </body>
 </html>

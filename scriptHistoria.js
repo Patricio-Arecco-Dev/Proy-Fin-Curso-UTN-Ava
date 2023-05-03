@@ -3,14 +3,18 @@ function inicio() {
   let videoplay = document.querySelector("video[id='videoHist']");
   let tiempoVisto = videoplay.currentTime;
   tiempoVisto = conversion(tiempoVisto);
-  document.querySelector("#instanciaVideo").innerHTML = `Tiempo Visto: ${tiempoVisto}`;
+  document.querySelector(
+    "#instanciaVideo"
+  ).innerHTML = `Tiempo Visto: ${tiempoVisto}`;
   let duracionVideo = videoplay.duration;
   if (isNaN(duracionVideo)) {
-    duracionVideo = "280"
-  };
+    duracionVideo = "280";
+  }
   duracionVideo = Math.floor(duracionVideo);
   duracionVideo = conversion(duracionVideo);
-  document.querySelector("#duracionVideo").innerHTML = `Duración del Video: ${duracionVideo}`;
+  document.querySelector(
+    "#duracionVideo"
+  ).innerHTML = `Duración del Video: ${duracionVideo}`;
   videoplay.ontimeupdate = actualizarVideo;
   videoplay.onend = recargarVideo;
 }
@@ -50,3 +54,4 @@ function conversion(segundos) {
   let minuto = d.getMinutes() <= 9 ? "0" + d.getMinutes() : d.getMinutes;
   return `${minuto}:${segundo}`;
 }
+
