@@ -389,8 +389,8 @@ div p {
 }
 
 #botonesVid {
-  width: 30%;
-  display: flex;
+  width: 50%;
+  display: block;
   /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: row;
   /* Generamos un ordenamiento horizontal */
@@ -398,7 +398,7 @@ div p {
 }
 
 #displayVid {
-  width: 70%;
+  width: 50%;
   display: block;
   /* Usamos un contenedor Flex para usar las prop  align-items y justify-content */
   flex-direction: column;

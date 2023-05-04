@@ -36,7 +36,15 @@ const pausarVideo = () => {
 const sonidoVideo = () => {
   document.querySelector("video[id='videoHist']").volume =
     !document.querySelector("video[id='videoHist']").volume;
-};
+    let estadoVol = document.querySelector("#volumenSiNo").src;
+    estadoVol = estadoVol.slice(-13)
+    console.log(estadoVol);
+    if(estadoVol == "volumenSi.svg"){
+      document.querySelector("#volumenSiNo").src="./img/volumenNo.svg"
+    } else {
+      document.querySelector("#volumenSiNo").src="./img/volumenSi.svg"
+    }
+  };
 
 function actualizarVideo() {
   let tiempoVisto = document.querySelector("video[id='videoHist']").currentTime;
