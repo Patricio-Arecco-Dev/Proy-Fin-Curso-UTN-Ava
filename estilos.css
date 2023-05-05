@@ -430,7 +430,7 @@ div p {
   margin: 5px;
 }
 
-#monitorExt {
+.perfilExt {
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-delay: 0s;
@@ -442,7 +442,7 @@ div p {
   fill: #f0e9d2;
 }
 
-#monitorInt {
+.perfilInt {
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-delay: 1s;
@@ -454,19 +454,7 @@ div p {
   fill: #495579;
 }
 
-#tecladoExt {
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  animation-name: animar1;
-  animation-iteration-count: 1;
-  fill: #f0e9d2;
-}
-
-#tecladoInt {
+.perfilMed {
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-delay: 1s;
@@ -475,8 +463,9 @@ div p {
   animation-play-state: running;
   animation-name: animar2;
   animation-iteration-count: 1;
-  fill: #495579;
+  fill: #afafaf;
 }
+
 
 @keyframes animar1 {
   0% {
